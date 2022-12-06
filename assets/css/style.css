@@ -13,7 +13,6 @@ body {
 
 a {
   color: skyblue;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 20px;
 }
 
@@ -34,7 +33,6 @@ p {
 
 .header {
   padding: 10px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   background-color: darkslategrey;
 }
 
@@ -82,9 +80,9 @@ p {
   color: darkslategray; 
   padding-left: 1%;
   padding-right: 1%;
-  position: absolute;
-  right: 20px;
-  bottom: 50px;
+  position: relative;
+  left: 56%;
+  top: 70%;
 }
 
 .h2 {
@@ -126,18 +124,11 @@ img:hover {
 
 /* Category Grid CSS */
 
-.subHeading {
-  text-align: center;
-  border-bottom: 2px solid black;
-  width: 300px;
-  margin: 50px auto;
-}
-
 #work {
-  margin: 0px 5%;
+  margin: 0px 1%;
   display: grid;
-  grid-template-rows: 50% 50% 50%;
-  grid-template-columns: 50% 50% ;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 1fr 1fr;
   gap: 10px;
   grid-template-areas:
   "SurfReport SurfReport"
@@ -146,20 +137,11 @@ img:hover {
   ;
 }
 
-#contact {
-  margin: 0px 5%;
-  display: grid;
-  grid-template-columns: 1 / span 5;
-
-}
-
-
 #SurfReport {
   grid-area: SurfReport;
   background-image: url("/assets/images/02-portfolio-4.jpg");
-  height: 50px;
-
 }
+
 #LEDWall {
   grid-area: LEDWall;
   background-image: url("/assets/images/02-portfolio-1.jpg");
@@ -180,7 +162,7 @@ img:hover {
   background-image: url("/assets/images/02-run-buddy.jpg");
 }
 
-.categoryGridArea {
+.work {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -190,29 +172,21 @@ img:hover {
   align-content: end;
 }
 
+.heading {
+  background-color: rgba(0,0,0,0.7);
+  padding: 15px;
+  height: 25px;
+  color: white;
+  font-size: 18px;
+  border-bottom: 5px solid #FF6200;
+}
+
 .page-section {
-  display: block;
+  display: flex;
   margin-left: 20px;
   padding: 20px;
   clear: both;
   float: left;
   width: 20%;
   height: 100%;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.footer nav {
-  padding-top: 15px;
-  margin-right: 20px;
-  float: right;
-  font-size: 20px;
-}
-
-.footer nav ul {
-  list-style-type: none;
-}
-
-.footer nav ul li {
-  display: inline-block;
-  margin-left: 25px;
 }
