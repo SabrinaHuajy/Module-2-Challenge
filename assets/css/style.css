@@ -19,6 +19,7 @@ a {
 p {
   font-size: 16px;
   margin: 0;
+  display: inline-flex;
 }
 
 /* Website header and navigation bar */
@@ -92,7 +93,6 @@ p {
 }
 
 .imgStyle1 {
-  border: 10px solid lightblue;
   opacity: 0.5;
   display: block;
   margin-left: auto;
@@ -112,12 +112,13 @@ img:hover {
 /* Category Grid CSS */
 
 #work {
-  margin: 0px 1%;
+  margin: 0px 8%;
   display: grid;
-  grid-template-rows: 50% 50%;
+  grid-template-rows: 90% 90% 90% 90%;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
   grid-template-areas:
+  "SurfReport SurfReport"
   "SurfReport SurfReport"
   "LEDWall Calculator"
   "PastelPuzzels RunBuddy"
@@ -127,26 +128,41 @@ img:hover {
 #SurfReport {
   grid-area: SurfReport;
   background-image: url("/assets/images/02-portfolio-4.jpg");
+  background-size: cover;
+  background-position: top;
+  border: 5px solid lightblue;
 }
 
 #LEDWall {
   grid-area: LEDWall;
   background-image: url("/assets/images/02-portfolio-1.jpg");
+  background-size: cover;
+  background-position: top;
+  border: 5px solid lightblue;
 }
 
 #Calculator {
   grid-area: Calculator;
   background-image: url("/assets/images/02-portfolio-2.jpg");
+  background-size: cover;
+  background-position: top;
+  border: 5px solid lightblue;
 }
 
 #PastelPuzzels {
   grid-area: PastelPuzzels;
   background-image: url("/assets/images/02-portfolio-3.jpg");
+  background-size: cover;
+  background-position: top;
+  border: 5px solid lightblue;
 }
 
 #RunBuddy {
   grid-area: RunBuddy;
   background-image: url("/assets/images/02-run-buddy.jpg");
+  background-size: cover;
+  background-position: top;
+  border: 5px solid lightblue;
 }
 
 .work {
@@ -160,16 +176,18 @@ img:hover {
 }
 
 .heading {
+  display: inline-block;
   background-color: skyblue;
-  padding: 15px;
-  height: 25px;
   color: darkslategrey;
-  font-size: 18px;
-  border-bottom: 5px solid #FF6200;
+  padding-left: 1%;
+  padding-right: 1%;
+  position: relative;
+  top: 65%;
+  
 }
 
 .page-section {
-  display: flex;
+  display: block;
   margin-left: 20px;
   padding: 20px;
   clear: both;
@@ -180,17 +198,9 @@ img:hover {
   border-right: 3px solid darkslategray;
 }
 
-#portofolio {
+#contactlinks {
   display: flex;
-}
-
-#contact {
-  margin: 0px 1%;
-  display: grid;
-  grid-template-rows: 20% 20% 20% 20% 20%;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  gap: 20px;
-  grid-template-areas:
-  "
-  ;
+  width: 50%;
+  align-items: center;
+  justify-content: space-evenly;
 }
