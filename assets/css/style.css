@@ -88,7 +88,7 @@ p {
 .h2 {
   background-color: skyblue; 
   color: darkslategray; 
-  text-align: float-right; 
+  text-align: float-left; 
 }
 
 .imgStyle1 {
@@ -107,19 +107,6 @@ img:hover {
   opacity: 1.0;
 }
 
-/* footer section */
-.footer {
-  padding: 30px;
-  clear: both;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  text-align: center;
-}
-
-.footer h2 {
-  font-size: 20px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
 
 
 /* Category Grid CSS */
@@ -129,7 +116,7 @@ img:hover {
   display: grid;
   grid-template-rows: 50% 50%;
   grid-template-columns: 1fr 1fr;
-  gap: 10px;
+  gap: 20px;
   grid-template-areas:
   "SurfReport SurfReport"
   "LEDWall Calculator"
@@ -173,10 +160,10 @@ img:hover {
 }
 
 .heading {
-  background-color: rgba(0,0,0,0.7);
+  background-color: skyblue;
   padding: 15px;
   height: 25px;
-  color: white;
+  color: darkslategrey;
   font-size: 18px;
   border-bottom: 5px solid #FF6200;
 }
@@ -189,4 +176,21 @@ img:hover {
   float: left;
   width: 20%;
   height: 100%;
+  color: darkslategray;
+  border-right: 3px solid darkslategray;
+}
+
+#portofolio {
+  display: flex;
+}
+
+#contact {
+  margin: 0px 1%;
+  display: grid;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  grid-template-areas:
+  "
+  ;
 }
