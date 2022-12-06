@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
@@ -9,15 +11,208 @@ body {
   line-height: 1.5;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
+a {
+  color: skyblue;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
 }
 
 p {
+  font-size: 16px;
   margin: 0;
+}
+
+/* Website header and navigation bar */
+
+#pageHeader { 
+  background-color: skyblue; 
+  color: darkslategray; 
+  text-align: left; 
+  padding-left: 5vw;
+  padding-right: 1vw;
+  }  
+
+.header {
+  padding: 10px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: darkslategrey;
+}
+
+.header h1 {
+  display: inline-block;
+  font-size: 48px;
+}
+
+.header nav {
+  padding-top: 15px;
+  margin-right: 20px;
+  float: right;
+  font-size: 20px;
+}
+
+.header nav ul {
+  list-style-type: none;
+}
+
+.header nav ul li {
+  display: inline-block;
+  margin-left: 25px;
+}
+
+/* hero image */
+.hero-banner {
+  height: 200px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-image: url("/assets/images/02-hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  /* background-color: #003780a1; */
+  /* filter: sepia(100%) hue-rotate(190deg) saturate(500%); */
+}
+.hero-banner div{
+  background-color: rgba(7, 83, 248, 0.26);
+  width: 100%;
+  height: 100%;
+}
+
+.hero-banner div h2 {
+  display: inline-block;
+  background-color: skyblue; 
+  color: darkslategray; 
+  padding-left: 1%;
+  padding-right: 1%;
+  position: absolute;
+  right: 20px;
+  bottom: 50px;
+}
+
+.h2 {
+  background-color: skyblue; 
+  color: darkslategray; 
+  text-align: float-right; 
+}
+
+.imgStyle1 {
+  border: 10px solid lightblue;
+  opacity: 0.5;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img {
+  opacity: 0.5;
+}
+
+img:hover {
+  opacity: 1.0;
+}
+
+/* footer section */
+.footer {
+  padding: 30px;
+  clear: both;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+}
+
+.footer h2 {
+  font-size: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+/* Category Grid CSS */
+
+.subHeading {
+  text-align: center;
+  border-bottom: 2px solid black;
+  width: 300px;
+  margin: 50px auto;
+}
+
+#work {
+  margin: 0px 5%;
+  display: grid;
+  grid-template-rows: 50% 50% 50%;
+  grid-template-columns: 50% 50% ;
+  gap: 10px;
+  grid-template-areas:
+  "SurfReport SurfReport"
+  "LEDWall Calculator"
+  "PastelPuzzels RunBuddy"
+  ;
+}
+
+#contact {
+  margin: 0px 5%;
+  display: grid;
+  grid-template-columns: 1 / span 5;
+
+}
+
+
+#SurfReport {
+  grid-area: SurfReport;
+  background-image: url("/assets/images/02-portfolio-4.jpg");
+  height: 50px;
+
+}
+#LEDWall {
+  grid-area: LEDWall;
+  background-image: url("/assets/images/02-portfolio-1.jpg");
+}
+
+#Calculator {
+  grid-area: Calculator;
+  background-image: url("/assets/images/02-portfolio-2.jpg");
+}
+
+#PastelPuzzels {
+  grid-area: PastelPuzzels;
+  background-image: url("/assets/images/02-portfolio-3.jpg");
+}
+
+#RunBuddy {
+  grid-area: RunBuddy;
+  background-image: url("/assets/images/02-run-buddy.jpg");
+}
+
+.categoryGridArea {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  display: grid;
+  align-content: end;
+}
+
+.page-section {
+  display: block;
+  margin-left: 20px;
+  padding: 20px;
+  clear: both;
+  float: left;
+  width: 20%;
+  height: 100%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.footer nav {
+  padding-top: 15px;
+  margin-right: 20px;
+  float: right;
+  font-size: 20px;
+}
+
+.footer nav ul {
+  list-style-type: none;
+}
+
+.footer nav ul li {
+  display: inline-block;
+  margin-left: 25px;
 }
