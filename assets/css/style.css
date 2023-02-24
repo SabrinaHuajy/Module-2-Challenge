@@ -70,18 +70,19 @@ p {
   padding-left: 100px;
 }
 
-#aboutborder {
-  border-left: 3px solid darkslategray;
-}
 
 /* hero image */
 .recent-photo {
   height: 200px;
   /* display: flex; */
-  float: right;
+  /* float: right; */
 }
 
 .hero-banner {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
   height: 200px;
   width: 100%;
   margin-bottom: 25px;
@@ -93,20 +94,21 @@ p {
 }
 
 .hero-banner div {
-  background-color: rgba(7, 83, 248, 0.26);
-  width: 100%;
-  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .hero-banner div h2 {
-  display: inline-block;
+  /* display: inline-block; */
   background-color: skyblue;
   color: darkslategray;
   padding-left: 1%;
   padding-right: 1%;
-  position: relative;
+
+  /* vertical-align: middle; */
+  /* position: relative;
   left: 56%;
-  top: 70%;
+  top: 70%; */
 }
 
 .h2 {
@@ -119,7 +121,7 @@ p {
 
 #work {
   opacity: 0.6;
-  border-left: 3px solid darkslategray;
+  /* border-left: 3px solid darkslategray; */
   padding-right: 100px;
   display: grid;
   grid-template-rows: 70% 70% 70% 70%;
@@ -197,14 +199,30 @@ p {
   width: 20%;
   height: 100%;
   color: darkslategray;
+  /* border-left: 3px solid darkslategray; */
+
 }
+
+.work-section {
+  border-right: 3px solid darkslategray;
+  height: 730px;
+  margin-right: 20px;
+padding: 20px 10px;
+
+}
+
+#contact {
+  display: flex;
+  align-items: center;
+}
+
 
 #contactlinks {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   margin-top: 600px;
-  border-left: 3px solid darkslategray;
+  /* border-left: 3px solid darkslategray; */
   /* position: fixed; */
   /* bottom: 0;  */
 }
@@ -219,3 +237,7 @@ p {
   position: fixed;
   bottom: 0; 
 } */
+
+.content-section {
+  border-left: 3px solid darkslategray;
+}
